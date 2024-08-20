@@ -1,10 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      </script>
+      <script type="text/javascript">
+         (function(){
+            emailjs.init({
+            publicKey: "A57Anm9_go4_CLz02",
+            });
+         })();
+</script>
+<script src="js/scriptemail.js"></script>
+
+
     <title>TRIL-MAN</title>
     <!-- font awesome link -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
@@ -154,24 +166,24 @@
    <h1 class="heading">about us</h1>
  
     <div class="row">
-            <div class="video">
-            <video src="images/trilvid.mp4" loop autoplay muted></video>
+            <div class="video" >
+            <video src="images/trilvid1.mp4" loop autoplay muted></video>
         </div>
 
         <div class="content">
             <h3>We'll provide you the top-quality work you want to see!</h3>
-            <p>TRIL-MAN Construction Company Incorporated was
-                establish in year 2021 as a newly construction
-                company in the country(Philippines).Owned by Mr.
-                JONATHAN P. TRILLANA and his companion Mr.
-                BON RYAN L. MANAHAN.
+            <p><b>TRIL-MAN Construction Company Incorporated</b> was
+            establish  <br> in year 2021 as a newly construction
+            company in the country (Philippines).Owned by <b>Mr.
+            JONATHAN P. TRILLANA</b> and his companion <b>Mr. BON RYAN L. MANAHAN.</b> 
             </p>
             
             <p>
                 Together with its fundamental values, the firm operation is planned and well delivered with passion,
                 commitment, and dedication. Led by experience and motivation, our company has a 
                 tremendous chance of being one of the greatest construction companies in the country .</p>
-            <a href="#services" class="btn">read more</a>
+                <br>
+            <a href="https://www.facebook.com/profile.php?id=100076324574097" target="_blank" class="btn">For more info, visit our Facebook page.</a>
             </div>
     
     </div>
@@ -179,23 +191,23 @@
     <div class="box-container">
 
         <div class="box">
-           <h3>1</h3>
+           <h3>4</h3>
            <p>years of experience</p>
         </div>
   
         <div class="box">
-           <h3>1</h3>
+           <h3>7+</h3>
            <p>project completed</p>
         </div>
 
         <div class="box">
-         <h3>3</h3>
+         <h3>2</h3>
          <p> ongoing project</p>
       </div>
 
   
         <div class="box">
-           <h3>4</h3>
+           <h3>7+</h3>
            <p>satiesfied clients</p>
         </div>
   
@@ -273,13 +285,25 @@
 
 
  <!-- projects section starts  -->
-
+ 
 
  <section class="projects" id="projects">
 
- <h1 class="heading"> completed project </h1>
+ <h1 class="heading"> completed projects </h1>
+   <!-- <video width="100%" height="100%" controls>
+   <source src="images/cpvid.mp4" type="video/mp4">
+   Your browser does not support the video tag.
+ </video> -->
 
+   <iframe class="map"
+    src="images/cpvid.mp4" width="100%"
+     height="410" style="border:0;"  type="video/mp4 loading="lazy"controls></iframe>
+
+ <br> <br> <br> <br> <br> <br> 
  <div class="box-container">
+
+  
+   
 
     <a href="images/finish_project.png" class="box">
        <div class="image">
@@ -287,20 +311,37 @@
        </div>
        <div class="content">
           <div class="info">
-             <h3>dcompleted home design</h3>
+             <h3> completed home design</h3>
              <p>construction, design</p>
           </div>
           <i class="fas fa-plus"></i>
        </div>
     </a>
+
+    
+    <a href="images/Inkedfinish_project3_LI.jpg" class="box">
+      <div class="image">
+         <img src="images/Inkedfinish_project3_LI.jpg" alt="">
+      </div>
+      <div class="content">
+         <div class="info">
+            <h3> completed home design</h3>
+            <p>construction, design</p>
+         </div>
+         <i class="fas fa-plus"></i>
+      </div>
+   </a>
  </div>
+
+     
+    </div>
 
 </section>
 
 
 <section class="projects" id="projects">
 
- <h1 class="heading"> ongoing project </h1>
+ <h1 class="heading"> ongoing projects </h1>
 
  <div class="box-container">
 
@@ -317,7 +358,7 @@
        </div>
     </a>
 
-    <a href="images/finish_project3.png" class="box">
+    <!-- <a href="images/finish_project3.png" class="box">
       <div class="image">
          <img src="images/finish_project3.png" alt="">
       </div>
@@ -328,7 +369,7 @@
          </div>
          <i class="fas fa-plus"></i>
       </div>
-   </a>
+   </a> -->
 
    <a href="images/finish_project4.png" class="box">
       <div class="image">
@@ -622,17 +663,16 @@ reviews section starts
    <h1 class="heading"> contact us </h1>
 
    <div class="row">
-
-      <iframe class="map" src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d964.2143725683128!2d120.73327502913736!3d14.833254195766102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339651cb2bac14b7%3A0xa1a05762efe45e4d!2sTRIL-MAN%20Construction%20Company%20Incorporated!5e0!3m2!1sen!2sph!4v1662098616783!5m2!1sen!2sph" width="600" height="450" style="border:0;"   allowfullscreen="" loading="lazy"></iframe>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.141737396514!2d120.7870497990564!3d14.873350802855338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339651001984a0d3%3A0x58cf1a22ab0c1f84!2sTRIL-MAN%20Construction%20Company%20Incorporated!5e0!3m2!1sen!2sph!4v1724129041470!5m2!1sen!2sph" width="600" height="450" style="border:0;"   allowfullscreen="" loading="lazy"></iframe>
       
-      <!-- <form action="https://formsubmit.co/bryantrillana07@gmail.com" method="POST" >
+      <form>
          <h3> contact us for any inquiries</h3>
-         <input type="text" name="name"  placeholder="name" class="box">
-         <input type="email" name="email" placeholder="email" class="box">
-         <input type="number" name="number" placeholder="phone" class="box">
-         <textarea name="message" placeholder="message" class="box" id="" cols="30" rows="10" required></textarea>
-         <input type="submit" value="send message" class="btn">
-      </form> -->
+         <input type="text" name="name" id="name" placeholder="name" class="box">
+         <input type="email" name="email" id="email" placeholder="email" class="box">
+         <input type="number" name="number" id="number" placeholder="phone" class="box">
+         <textarea name="message" placeholder="message" class="box" id="message" cols="30" rows="10" required></textarea>
+         <input type="submit" onclick="sendMail()" value="send message" class="btn">
+      </form>
 
    </div>
 
@@ -760,4 +800,3 @@ lightGallery(document.querySelector('.projects .box-container'));
 </html>
 
 <!-- 0f52ba  -->
-
