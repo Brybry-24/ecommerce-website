@@ -6,5 +6,7 @@ function senMail(){
         message : document.getElementById("message").value,
     }
 
-    emailjs.send("service_b14je8k","template_jqfam1c",params).then(swal("Email was sent!"))
+    emailjs.send("service_b14je8k","template_jqfam1c",params).then(function(){
+        swal("Email was sent!");
+    });
 }
