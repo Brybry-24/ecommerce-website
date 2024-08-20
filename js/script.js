@@ -182,3 +182,19 @@ var swiper = new Swiper(".logo-slider", {
 //       },
 //    },
 // });
+
+function sendMail() {
+  var templateParams = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    number: document.getElementById("number").value,
+    message: document.getElementById("message").value
+  };
+
+  emailjs.send("service_b14je8k","template_jqfam1c",templateParams)
+    .then(function(response) {
+      console.log("Email sent successfully!");
+    }, function(error) {
+      console.log("Error sending email:", error);
+    });
+}
