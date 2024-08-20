@@ -7,6 +7,7 @@
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
       </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <script type="text/javascript">
          (function(){
             emailjs.init({
@@ -21,7 +22,12 @@
            // these IDs from the previous steps
            emailjs.sendForm('service_b14je8k', 'template_jqfam1c', this)
                .then(() => {
-                   console.log('SUCCESS!');
+                   swal({
+                      title: "Good job!",
+                      text: "You clicked the button!",
+                      icon: "success",
+                      button: "Aww yiss!",
+                    });
                }, (error) => {
                    console.log('FAILED...', error);
                });
