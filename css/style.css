@@ -704,39 +704,6 @@ padding {
   }
 }
 
-/* Further adjustments for very small screens */
-@media (max-width: 600px) {
-  .header {
-    padding: 0.5rem 1rem;
-  }
-
-  .home .slide {
-    min-height: 40rem;
-  }
-
-  .home .slide .content h3 {
-    font-size: 4rem;
-  }
-
-  .home .slide .content p,
-  .about .row .content p,
-  .services .box-container .box p,
-  .projects .box-container .box .content .info p,
-  .contact .row form .box,
-  .blogs .slide .content p {
-    font-size: 1.3rem;
-  }
-
-  .btn {
-    padding: 0.8rem 2rem;
-    font-size: 1.5rem;
-  }
-
-  .contact .row form h3 {
-    font-size: 2rem;
-  }
-}
-
 
 
 
