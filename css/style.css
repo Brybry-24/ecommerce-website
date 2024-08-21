@@ -754,24 +754,7 @@ row {
   min-width: 100%; /* Ensure full width on smaller screens */
 }
 
-/* On smaller screens */
-@media (max-width: 768px) {
-  .map, #contact-form {
-    flex: 1 1 100%; /* Full width for both on small screens */
-  }
-}
-
-/* On smaller screens */
-@media (max-width: 600px) {
-  form .form-group {
-    min-width: 100%; /* Make each form element take full width */
-  }
-}
-
-.
-
-
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
   .header {
     padding: 1.5rem 2rem;
   }
@@ -833,4 +816,22 @@ row {
     display: block;
     margin: 2rem;
   }
-}/*# sourceMappingURL=style.css.map */ */
+}/*# sourceMappingURL=style.css.map */
+
+
+/* On smaller screens */
+@media (max-width: 768px) {
+  .map, #contact-form {
+    flex: 1 1 100%; /* Full width for both on small screens */
+  }
+}
+
+/* On smaller screens */
+@media (max-width: 600px) {
+  form .form-group {
+    min-width: 100%; /* Make each form element take full width */
+  }
+}
+
+.
+
