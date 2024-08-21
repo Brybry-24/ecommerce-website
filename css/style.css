@@ -645,7 +645,100 @@ padding {
   height: 5rem;
 }
 
-@media (max-width: 1200px) {
+/* General styles for smaller screens */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header .navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header .navbar a {
+    margin: 0.5rem 0;
+  }
+
+  .header .icons {
+    margin-top: 1rem;
+  }
+
+  .contact-info {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .home .slide .content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about .row {
+    flex-direction: column;
+  }
+
+  .services .box-container,
+  .projects .box-container,
+  .reviews .slide,
+  .pricing .box-container,
+  .blogs .slide {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+
+  .contact .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact .row .map,
+  .contact .row form {
+    width: 100%;
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 600px) {
+  .header {
+    padding: 0.5rem 1rem;
+  }
+
+  .home .slide {
+    min-height: 40rem;
+  }
+
+  .home .slide .content h3 {
+    font-size: 4rem;
+  }
+
+  .home .slide .content p,
+  .about .row .content p,
+  .services .box-container .box p,
+  .projects .box-container .box .content .info p,
+  .contact .row form .box,
+  .blogs .slide .content p {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  .contact .row form h3 {
+    font-size: 2rem;
+  }
+}
+
+
+/* @media (max-width: 1200px) {
   .header {
     padding: 1.5rem 2rem;
   }
@@ -707,4 +800,4 @@ padding {
     display: block;
     margin: 2rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */ */
