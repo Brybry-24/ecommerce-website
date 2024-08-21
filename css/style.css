@@ -737,22 +737,8 @@ padding {
   }
 }
 
-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
-.map {
-  flex: 1 1 45%; /* Map takes 45% of the container width */
-  min-width: 100%; /* Ensure full width on smaller screens */
-  margin-bottom: 1rem; /* Space below the map */
-}
 
-#contact-form {
-  flex: 1 1 45%; /* Form takes 45% of the container width */
-  min-width: 100%; /* Ensure full width on smaller screens */
-}
 
 @media (max-width: 1200px) {
   .header {
@@ -816,22 +802,13 @@ row {
     display: block;
     margin: 2rem;
   }
+
+   form .form-group {
+    min-width: 100%; /* Make each form element take full width */
+  }
 }/*# sourceMappingURL=style.css.map */
 
 
-/* On smaller screens */
-@media (max-width: 768px) {
-  .map, #contact-form {
-    flex: 1 1 100%; /* Full width for both on small screens */
-  }
-}
-
-/* On smaller screens */
-@media (max-width: 600px) {
-  form .form-group {
-    min-width: 100%; /* Make each form element take full width */
-  }
-}
-
 .
+
 
