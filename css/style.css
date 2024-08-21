@@ -712,7 +712,18 @@ padding {
     margin: 2rem;
   }
 
+  
+  .contact .row {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .contact .row .map,
+  .contact .row form {
+    width: 100%;
+  }
+
+  
 }/*# sourceMappingURL=style.css.map */
 
 
